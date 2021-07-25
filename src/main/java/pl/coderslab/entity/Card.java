@@ -8,14 +8,19 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "users")
+@Table(name = "cards")
 @Getter
 @Setter
 @ToString
-public class User {
+public class Card {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String email;
-    private String password;
+    private String name;
+    @ManyToMany
+    private List<Cocktail> cocktails;
+    @ManyToOne
+    private User user;
+
 }

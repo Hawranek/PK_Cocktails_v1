@@ -5,17 +5,15 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
-@Table(name = "users")
+@Table(name = "ingredients")
 @Getter
 @Setter
 @ToString
-public class User {
+public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String email;
-    private String password;
+    private String name;
 }
