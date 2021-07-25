@@ -18,12 +18,11 @@ public class Cocktail {
     private Long id;
     private String name;
     private String category;
-    private String alcoholic;
+    private Boolean alcoholic;
     private String glass;
     private String instructions;
     private String drinkThumb;
     @ManyToMany
     private List<Ingredient> ingredients;
     private String imageSource;
-
 }
