@@ -16,5 +16,7 @@
 <p>Cocktail name: ${cocktail.name}</p>
 <p>Ingredient name: ${ingredient.name}</p>
 <p>Card name: ${card.name}</p>
+<a href="/login">Zaloguj się</a>
+<a href="/form">Zarejestruj się</a>
 </body>
 </html>
